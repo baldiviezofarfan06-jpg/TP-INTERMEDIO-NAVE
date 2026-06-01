@@ -1,0 +1,348 @@
+/* ── Reset ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #1a1a2e;
+}
+
+/* ── NAVBAR ── */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-logo img {
+  height: 36px;
+  object-fit: contain;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .logo-desktop {
+    display: none;
+  }
+  .logo-mobile {
+    display: block;
+    height: 36px;
+  }
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #374151;
+  font-size: 15px;
+}
+
+.nav-acciones {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-outline {
+  padding: 10px 20px;
+  border: 1.5px solid #7c3aed;
+  border-radius: 8px;
+  color: #7c3aed;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background: #7c3aed;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ── RESPONSIVE NAVBAR ── */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-acciones {
+    gap: 8px;
+  }
+
+  .btn-outline {
+    display: none;
+  }
+}
+/* ── SECCIÓN VUELO ── */
+.vuelo {
+  padding: 80px 48px;
+  background: white;
+}
+
+.vuelo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vuelo h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vuelo-cards {
+  display: flex;
+  gap: 32px;
+}
+
+.vuelo-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vuelo-icono {
+  width: 52px;
+  height: 52px;
+  background: #ede9fe;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.vuelo-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.vuelo-card p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* ── RESPONSIVE VUELO ── */
+@media (max-width: 768px) {
+  .vuelo {
+    padding: 48px 20px;
+  }
+
+  .vuelo h2 {
+    font-size: 26px;
+  }
+
+  .vuelo-cards {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+/* ── SECCIÓN COBROS ── */
+.cobros {
+  padding: 80px 48px;
+  background: #f9fafb;
+}
+
+.cobros-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cobros h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.cobro-item {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  margin-bottom: 80px;
+}
+
+.cobro-invertido {
+  flex-direction: row-reverse;
+}
+
+.cobro-texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cobro-texto h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.cobro-texto p {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.cobro-link {
+  color: #7c3aed;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.cobro-imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cobro-img-placeholder {
+  width: 280px;
+  height: 280px;
+  background: #ede9fe;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+}
+
+/* ── RESPONSIVE COBROS ── */
+@media (max-width: 768px) {
+  .cobros {
+    padding: 48px 20px;
+  }
+
+  .cobros h2 {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  .cobro-item,
+  .cobro-invertido {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .cobro-img-placeholder {
+    width: 200px;
+    height: 200px;
+    font-size: 60px;
+  }
+}
+/* ── FOOTER ── */
+.footer {
+  background: white;
+  border-top: 1px solid #e5e7eb;
+  padding: 64px 48px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.footer-logo img {
+  height: 32px;
+  object-fit: contain;
+}
+
+.footer-columnas {
+  display: flex;
+  gap: 64px;
+}
+
+.footer-col h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col ul a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.footer-col ul a:hover {
+  color: #7c3aed;
+}
+
+/* ── RESPONSIVE FOOTER ── */
+@media (max-width: 768px) {
+  .footer {
+    padding: 48px 20px;
+  }
+
+  .footer-columnas {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .footer-col {
+    min-width: calc(50% - 16px);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-col {
+    min-width: 100%;
+  }
+}
+/* ── IMÁGENES DE COBROS ── */
+.cobro-imagen img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+}
