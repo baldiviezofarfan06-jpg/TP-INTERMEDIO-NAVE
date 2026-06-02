@@ -346,3 +346,42 @@ header {
   height: auto;
   object-fit: contain;
 }
+/* ── HOVER EFFECTS ── */
+.btn-primary {
+  transition: background 0.2s, transform 0.2s;
+}
+.btn-primary:hover {
+  background: #6d28d9;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  transition: all 0.2s;
+}
+.btn-outline:hover {
+  background: #7c3aed;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.nav-links a {
+  transition: color 0.2s;
+}
+.nav-links a:hover {
+  color: #7c3aed;
+}
+
+.vuelo-card {
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.vuelo-card:hover {
+  transform: translateY(-4px);
+}
+
+.cobro-link {
+  transition: letter-spacing 0.2s;
+}
+.cobro-link:hover {
+  letter-spacing: 0.5px;
+}
